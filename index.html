@@ -3,18 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rinterio</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blk: '#212121',
+          }
+        }
+      }
+    }
+  </script> 
 </head>
 <body>
-    <header class="container">
-        <nav>
-            
-        </nav>
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+
+              <a class="btn btn-ghost text-3xl font-extrabold text-blk">Rinterio<div class="bg-[#ABEF5F] rounded-full w-6 h-6 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m10.525 5.495l-.004 2l4.557.01l-9.603 9.585l1.413 1.415l9.63-9.61l-.012 4.614l2 .004l.02-8z"/></svg>
+            </div></a>
+
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-base font-normal text-[#737373]">
+                <li><a class="hover:text-[#494949] hover:font-extrabold duration-300">Home</a></li>
+                <li><a class="hover:text-[#494949] hover:font-extrabold duration-300">Services</a>
+                <li><a class="hover:text-[#494949] hover:font-extrabold duration-300">Portfolio</a></li>
+                <li><a class="hover:text-[#494949] hover:font-extrabold duration-300">Blogs</a></li>
+                <li><a class="hover:text-[#494949] hover:font-extrabold duration-300">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+              <a class="btn rounded-full text-xl font-extrabold bg-[#ABEF5F]">Book Consult
+<div class="bg-black rounded-full w-5 h-5 text-white flex items-center justify-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m10.525 5.495l-.004 2l4.557.01l-9.603 9.585l1.413 1.415l9.63-9.61l-.012 4.614l2 .004l.02-8z"/></svg>
+</div></a>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32m448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32"/></svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li>
+                    <a>Services</a>
+
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
     </header>
     <main>
-
+        <section>
+            <div class="card bg-base-100 w-96 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </section>
     </main>
     <footer>
 
